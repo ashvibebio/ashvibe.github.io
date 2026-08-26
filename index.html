@@ -11,13 +11,25 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <div class="click-gate" id="click-gate" role="button" tabindex="0" aria-label="Войти на сайт">
+    <span>click to enter...</span>
+  </div>
   <div class="rain" aria-hidden="true"></div>
   <div class="ash-layer" aria-hidden="true"></div>
   <div class="grain" aria-hidden="true"></div>
+  <div class="music-player" aria-label="Музыкальный плеер">
+    <div class="tv-screen"><img class="tv-gif" src="https://cdn.discordapp.com/attachments/1373850236614873121/1541988262707593346/pixelated_mini-dump_-_Album_on_Imgur.gif?ex=6a8f97fa&amp;is=6a8e467a&amp;hm=11133223c7b0f908feb35b37e7031c9cccb0fb9491f3307adc2ebd144e274348&amp;" alt="Анимированный фон"><span class="screen-noise">NO SIGNAL / MUSIC</span></div>
+    <div class="tv-controls">
+      <button id="music-toggle" type="button" aria-label="Запустить музыку"><span class="play-icon">▶</span><span id="music-label">PLAY</span></button>
+      <label class="volume-control" for="music-volume"><span>VOL</span><input id="music-volume" type="range" min="0" max="100" value="35" aria-label="Громкость музыки"><span id="volume-value">35</span></label>
+    </div>
+    <div class="tv-brand">ASHVISION <span>• 01</span></div>
+  </div>
+  <div id="youtube-player" aria-hidden="true"></div>
   <main class="profile-wrap">
     <div class="side-note">luv pretty &lt;3</div>
     <section class="profile-card" aria-label="Профиль ash">
-      <div class="profile-topline"><span>ash.</span><span>東京 / 03:17</span></div>
+      <div class="profile-topline"><span>ash.</span><span id="local-time">--:--:--</span></div>
       <div class="avatar-frame">
         <div class="avatar-glow"></div>
         <img class="avatar" src="https://cdn.discordapp.com/avatars/501049010757435405/32ad63e1a2eee694764a5a922a5fd1cb.webp?size=512" alt="Discord avatar ash">
@@ -34,11 +46,12 @@
         <a href="https://www.twitch.tv/ash9od" target="_blank" rel="noreferrer"><span class="link-icon">◉</span> Twitch <span>↗</span></a>
         <a href="https://t.me/anlakkkkkkk" target="_blank" rel="noreferrer"><span class="link-icon">✈</span> Telegram <span>↗</span></a>
         <a href="https://github.com/ashvibebio" target="_blank" rel="noreferrer"><span class="link-icon">⌘</span> GitHub <span>↗</span></a>
+        <a href="https://tracker.gg/valorant/profile/riot/ash%23vibe/overview?platform=pc&amp;playlist=competitive&amp;season=8102cd81-43a0-d0d7-bd59-47b8fe9bed1b" target="_blank" rel="noreferrer"><span class="link-icon">✦</span> Valorant Tracker <span>↗</span></a>
       </div>
-      <div class="profile-footer"><span>146 UID</span><span>ash_vibe</span><span>♡</span></div>
+      <div class="profile-footer"><span>ash_vibe</span><span>♡</span></div>
     </section>
-    <p class="hint">click a link to connect <span>·</span> ash_vibe</p>
   </main>
   <script src="script.js"></script>
+  <script src="https://www.youtube.com/iframe_api"></script>
 </body>
 </html>
