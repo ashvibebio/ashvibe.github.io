@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ash. — личная страница.">
+  <title>ash. — profile</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=2027">
+</head>
+<body>
+  <div class="click-gate" id="click-gate" role="button" tabindex="0" aria-label="Войти на сайт">
+    <span>click to enter...</span>
+  </div>
+  <div class="rain" aria-hidden="true"></div>
+  <div class="background-subtitles" aria-live="polite" aria-label="Субтитры песни"><span class="subtitle-line"><span class="subtitle-word">One,</span> <span class="subtitle-word">two,</span> <span class="subtitle-word">three</span></span></div>
+  <div class="ash-layer" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="music-player" aria-label="Музыкальный плеер">
+    <div class="tv-screen"><img class="tv-gif" src="https://cdn.discordapp.com/attachments/1544204623588368424/1545255990147031050/pixelated_mini-dump_-_Album_on_Imgur.gif?ex=6a9b7b49&amp;is=6a9a29c9&amp;hm=3b69411165eeec12462fcf4fc4cf92eeb4999c6a2b626b70115b46ab5e7d3400&amp;" alt="Анимированное изображение на экране телевизора"><span class="screen-noise">NO SIGNAL / MUSIC</span></div>
+    <div class="tv-controls">
+      <button id="music-toggle" type="button" aria-label="Запустить музыку"><span class="play-icon">▶</span><span id="music-label">PLAY</span></button>
+      <label class="volume-control" for="music-volume"><span>VOL</span><input id="music-volume" type="range" min="0" max="100" value="35" aria-label="Громкость музыки"><span id="volume-value">35</span></label>
+    </div>
+    <div class="tv-brand">ASHVISION <span>• 01</span></div>
+  </div>
+  <audio id="music-audio" src="Музыка.mp3" loop preload="metadata"></audio>
+  <main class="profile-wrap">
+    <div class="side-note">luv pretty &lt;3</div>
+    <section class="profile-card" aria-label="Профиль ash">
+      <div class="profile-topline"><span>ash.</span><span id="local-time">--:--:--</span></div>
+      <div class="avatar-frame">
+        <div class="avatar-glow"></div>
+        <img class="avatar" src="avatar.png" alt="Аватар ash с котёнком">
+        <span class="online-dot" title="В сети"></span>
+      </div>
+      <div class="identity">
+        <h1>ash.</h1>
+        <p class="status">hate me</p>
+        <p class="handle">@ash_vibe</p>
+      </div>
+      <div class="rule"></div>
+      <p class="bio">quiet mind. loud thoughts.<br>lost somewhere between dreams and reality.</p>
+      <div class="links" aria-label="Ссылки профиля">
+        <a href="https://www.twitch.tv/ash9od" target="_blank" rel="noreferrer"><img class="link-image" src="Twitch.png" alt=""><span>Twitch</span><span>↗</span></a>
+        <a href="https://t.me/anlakkkkkkk" target="_blank" rel="noreferrer"><img class="link-image" src="Telegram.png" alt=""><span>Telegram</span><span>↗</span></a>
+        <a href="https://github.com/ashvibebio" target="_blank" rel="noreferrer"><img class="link-image" src="GitHub.png" alt=""><span>GitHub</span><span>↗</span></a>
+        <a href="https://tracker.gg/valorant/profile/riot/ash%23vibe/overview?platform=pc&amp;playlist=competitive&amp;season=8102cd81-43a0-d0d7-bd59-47b8fe9bed1b" target="_blank" rel="noreferrer"><img class="link-image" src="tracker.png" alt=""><span>Valorant Tracker</span><span>↗</span></a>
+      </div>
+      <div class="profile-footer"><span>ash_vibe</span><span class="view-count" title="Количество просмотров">Просмотры <strong id="view-count-number">18 495</strong></span><span>♡</span></div>
+    </section>
+  </main>
+  <script src="script.js?v=2027"></script>
+</body>
+</html>
